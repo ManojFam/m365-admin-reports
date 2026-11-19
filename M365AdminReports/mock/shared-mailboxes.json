@@ -1,0 +1,63 @@
+[
+  {
+    "displayName": "Reception",
+    "primarySmtpAddress": "reception@example.com",
+    "userPrincipalName": "reception@example.com",
+    "recipientTypeDetails": "SharedMailbox",
+    "fullAccess": [
+      "avery.quinn@example.com",
+      "casey.doyle@example.com"
+    ],
+    "sendAs": [
+      "casey.doyle@example.com"
+    ]
+  },
+  {
+    "displayName": "Student Enquiries",
+    "primarySmtpAddress": "enquiries@example.com",
+    "userPrincipalName": "enquiries@example.com",
+    "recipientTypeDetails": "SharedMailbox",
+    "fullAccess": [
+      "eli.foster@example.com",
+      "harper.singh@example.com"
+    ],
+    "sendAs": [
+      "eli.foster@example.com"
+    ]
+  },
+  {
+    "displayName": "Finance Invoices",
+    "primarySmtpAddress": "invoices@example.com",
+    "userPrincipalName": "invoices@example.com",
+    "recipientTypeDetails": "SharedMailbox",
+    "fullAccess": [
+      "frankie.moss@example.com",
+      "georgie.lam@example.com"
+    ],
+    "sendAs": [
+      "frankie.moss@example.com"
+    ]
+  },
+  {
+    "displayName": "IT Alerts",
+    "primarySmtpAddress": "it.alerts@example.com",
+    "userPrincipalName": "it.alerts@example.com",
+    "recipientTypeDetails": "SharedMailbox",
+    "fullAccess": [],
+    "sendAs": []
+  },
+  {
+    "displayName": "Timetabling",
+    "primarySmtpAddress": "timetabling@example.com",
+    "userPrincipalName": "timetabling@example.com",
+    "recipientTypeDetails": "SharedMailbox",
+    "fullAccess": [
+      "casey.doyle@example.com",
+      "rory.chen@example.com",
+      "dana.whitfield@example.com"
+    ],
+    "sendAs": [
+      "rory.chen@example.com"
+    ]
+  }
+]

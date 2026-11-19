@@ -1,0 +1,297 @@
+[
+  {
+    "id": "00000000-0000-4000-8000-000000000001",
+    "userPrincipalName": "avery.quinn@example.com",
+    "userDisplayName": "Avery Quinn",
+    "userType": "member",
+    "isAdmin": true,
+    "isMfaRegistered": true,
+    "isMfaCapable": true,
+    "isSsprRegistered": true,
+    "defaultMfaMethod": "microsoftAuthenticatorPush",
+    "methodsRegistered": [
+      "microsoftAuthenticatorPush",
+      "fido2"
+    ]
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000002",
+    "userPrincipalName": "blake.harper@example.com",
+    "userDisplayName": "Blake Harper",
+    "userType": "member",
+    "isAdmin": true,
+    "isMfaRegistered": false,
+    "isMfaCapable": false,
+    "isSsprRegistered": true,
+    "defaultMfaMethod": "none",
+    "methodsRegistered": [
+      "email"
+    ]
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000003",
+    "userPrincipalName": "casey.doyle@example.com",
+    "userDisplayName": "Casey Doyle",
+    "userType": "member",
+    "isAdmin": false,
+    "isMfaRegistered": true,
+    "isMfaCapable": true,
+    "isSsprRegistered": true,
+    "defaultMfaMethod": "microsoftAuthenticatorPush",
+    "methodsRegistered": [
+      "microsoftAuthenticatorPush",
+      "softwareOneTimePasscode"
+    ]
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000004",
+    "userPrincipalName": "dana.whitfield@example.com",
+    "userDisplayName": "Dana Whitfield",
+    "userType": "member",
+    "isAdmin": false,
+    "isMfaRegistered": false,
+    "isMfaCapable": false,
+    "isSsprRegistered": true,
+    "defaultMfaMethod": "none",
+    "methodsRegistered": [
+      "email"
+    ]
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000005",
+    "userPrincipalName": "eli.foster@example.com",
+    "userDisplayName": "Eli Foster",
+    "userType": "member",
+    "isAdmin": false,
+    "isMfaRegistered": true,
+    "isMfaCapable": true,
+    "isSsprRegistered": true,
+    "defaultMfaMethod": "microsoftAuthenticatorPush",
+    "methodsRegistered": [
+      "microsoftAuthenticatorPush"
+    ]
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000006",
+    "userPrincipalName": "frankie.moss@example.com",
+    "userDisplayName": "Frankie Moss",
+    "userType": "member",
+    "isAdmin": false,
+    "isMfaRegistered": true,
+    "isMfaCapable": true,
+    "isSsprRegistered": true,
+    "defaultMfaMethod": "microsoftAuthenticatorPush",
+    "methodsRegistered": [
+      "microsoftAuthenticatorPush"
+    ]
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000007",
+    "userPrincipalName": "georgie.lam@example.com",
+    "userDisplayName": "Georgie Lam",
+    "userType": "member",
+    "isAdmin": false,
+    "isMfaRegistered": true,
+    "isMfaCapable": false,
+    "isSsprRegistered": true,
+    "defaultMfaMethod": "microsoftAuthenticatorPush",
+    "methodsRegistered": [
+      "microsoftAuthenticatorPush"
+    ]
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000008",
+    "userPrincipalName": "harper.singh@example.com",
+    "userDisplayName": "Harper Singh",
+    "userType": "member",
+    "isAdmin": false,
+    "isMfaRegistered": true,
+    "isMfaCapable": false,
+    "isSsprRegistered": true,
+    "defaultMfaMethod": "mobilePhone",
+    "methodsRegistered": [
+      "mobilePhone"
+    ]
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000009",
+    "userPrincipalName": "indy.rowe@example.com",
+    "userDisplayName": "Indy Rowe",
+    "userType": "member",
+    "isAdmin": false,
+    "isMfaRegistered": true,
+    "isMfaCapable": false,
+    "isSsprRegistered": true,
+    "defaultMfaMethod": "microsoftAuthenticatorPush",
+    "methodsRegistered": [
+      "microsoftAuthenticatorPush"
+    ]
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000010",
+    "userPrincipalName": "jules.ortega@example.com",
+    "userDisplayName": "Jules Ortega",
+    "userType": "member",
+    "isAdmin": false,
+    "isMfaRegistered": false,
+    "isMfaCapable": false,
+    "isSsprRegistered": false,
+    "defaultMfaMethod": "none",
+    "methodsRegistered": []
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000011",
+    "userPrincipalName": "kai.bennett@example.com",
+    "userDisplayName": "Kai Bennett",
+    "userType": "member",
+    "isAdmin": false,
+    "isMfaRegistered": false,
+    "isMfaCapable": false,
+    "isSsprRegistered": false,
+    "defaultMfaMethod": "none",
+    "methodsRegistered": []
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000012",
+    "userPrincipalName": "breakglass.01@example.com",
+    "userDisplayName": "Break Glass 01 (emergency access)",
+    "userType": "member",
+    "isAdmin": true,
+    "isMfaRegistered": true,
+    "isMfaCapable": true,
+    "isSsprRegistered": true,
+    "defaultMfaMethod": "none",
+    "methodsRegistered": [
+      "fido2"
+    ]
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000013",
+    "userPrincipalName": "morgan.ellis@example.com",
+    "userDisplayName": "Morgan Ellis",
+    "userType": "member",
+    "isAdmin": true,
+    "isMfaRegistered": true,
+    "isMfaCapable": true,
+    "isSsprRegistered": true,
+    "defaultMfaMethod": "mobilePhone",
+    "methodsRegistered": [
+      "mobilePhone"
+    ]
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000014",
+    "userPrincipalName": "noor.haddad@example.com",
+    "userDisplayName": "Noor Haddad",
+    "userType": "member",
+    "isAdmin": false,
+    "isMfaRegistered": true,
+    "isMfaCapable": true,
+    "isSsprRegistered": true,
+    "defaultMfaMethod": "microsoftAuthenticatorPush",
+    "methodsRegistered": [
+      "windowsHelloForBusiness",
+      "microsoftAuthenticatorPush"
+    ]
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000015",
+    "userPrincipalName": "oakley.grant_partner.example#EXT#@example.com",
+    "userDisplayName": "Oakley Grant (Partner)",
+    "userType": "guest",
+    "isAdmin": false,
+    "isMfaRegistered": false,
+    "isMfaCapable": false,
+    "isSsprRegistered": false,
+    "defaultMfaMethod": "none",
+    "methodsRegistered": []
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000016",
+    "userPrincipalName": "parker.young@example.com",
+    "userDisplayName": "Parker Young",
+    "userType": "member",
+    "isAdmin": false,
+    "isMfaRegistered": true,
+    "isMfaCapable": true,
+    "isSsprRegistered": true,
+    "defaultMfaMethod": "softwareOneTimePasscode",
+    "methodsRegistered": [
+      "softwareOneTimePasscode"
+    ]
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000017",
+    "userPrincipalName": "rory.chen@example.com",
+    "userDisplayName": "Rory Chen",
+    "userType": "member",
+    "isAdmin": false,
+    "isMfaRegistered": true,
+    "isMfaCapable": true,
+    "isSsprRegistered": true,
+    "defaultMfaMethod": "microsoftAuthenticatorPush",
+    "methodsRegistered": [
+      "microsoftAuthenticatorPush"
+    ]
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000018",
+    "userPrincipalName": "reception@example.com",
+    "userDisplayName": "Reception",
+    "userType": "member",
+    "isAdmin": false,
+    "isMfaRegistered": false,
+    "isMfaCapable": false,
+    "isSsprRegistered": false,
+    "defaultMfaMethod": "none",
+    "methodsRegistered": []
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000019",
+    "userPrincipalName": "enquiries@example.com",
+    "userDisplayName": "Student Enquiries",
+    "userType": "member",
+    "isAdmin": false,
+    "isMfaRegistered": false,
+    "isMfaCapable": false,
+    "isSsprRegistered": false,
+    "defaultMfaMethod": "none",
+    "methodsRegistered": []
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000020",
+    "userPrincipalName": "invoices@example.com",
+    "userDisplayName": "Finance Invoices",
+    "userType": "member",
+    "isAdmin": false,
+    "isMfaRegistered": false,
+    "isMfaCapable": false,
+    "isSsprRegistered": false,
+    "defaultMfaMethod": "none",
+    "methodsRegistered": []
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000021",
+    "userPrincipalName": "it.alerts@example.com",
+    "userDisplayName": "IT Alerts",
+    "userType": "member",
+    "isAdmin": false,
+    "isMfaRegistered": false,
+    "isMfaCapable": false,
+    "isSsprRegistered": false,
+    "defaultMfaMethod": "none",
+    "methodsRegistered": []
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000022",
+    "userPrincipalName": "timetabling@example.com",
+    "userDisplayName": "Timetabling",
+    "userType": "member",
+    "isAdmin": false,
+    "isMfaRegistered": false,
+    "isMfaCapable": false,
+    "isSsprRegistered": false,
+    "defaultMfaMethod": "none",
+    "methodsRegistered": []
+  }
+]

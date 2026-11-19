@@ -1,0 +1,410 @@
+[
+  {
+    "id": "00000000-0000-4000-8000-000000000001",
+    "displayName": "Avery Quinn",
+    "userPrincipalName": "avery.quinn@example.com",
+    "userType": "Member",
+    "accountEnabled": true,
+    "department": "IT",
+    "createdDateTime": "2023-02-06T01:00:00Z",
+    "assignedLicenses": [
+      {
+        "skuId": "00000000-0000-4000-a000-0000000000a3",
+        "disabledPlans": []
+      },
+      {
+        "skuId": "00000000-0000-4000-a000-0000000000d1",
+        "disabledPlans": []
+      }
+    ],
+    "signInActivity": {
+      "lastSignInDateTime": "2026-11-15T08:12:00Z",
+      "lastNonInteractiveSignInDateTime": "2026-11-15T22:40:00Z"
+    }
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000002",
+    "displayName": "Blake Harper",
+    "userPrincipalName": "blake.harper@example.com",
+    "userType": "Member",
+    "accountEnabled": true,
+    "department": "IT",
+    "createdDateTime": "2024-07-15T00:30:00Z",
+    "assignedLicenses": [
+      {
+        "skuId": "00000000-0000-4000-a000-0000000000a3",
+        "disabledPlans": []
+      },
+      {
+        "skuId": "00000000-0000-4000-a000-0000000000d1",
+        "disabledPlans": []
+      }
+    ],
+    "signInActivity": {
+      "lastSignInDateTime": "2026-11-14T09:30:00Z",
+      "lastNonInteractiveSignInDateTime": "2026-11-14T21:05:00Z"
+    }
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000003",
+    "displayName": "Casey Doyle",
+    "userPrincipalName": "casey.doyle@example.com",
+    "userType": "Member",
+    "accountEnabled": true,
+    "department": "Training",
+    "createdDateTime": "2023-05-01T02:00:00Z",
+    "assignedLicenses": [
+      {
+        "skuId": "00000000-0000-4000-a000-0000000000a1",
+        "disabledPlans": []
+      }
+    ],
+    "signInActivity": {
+      "lastSignInDateTime": "2026-11-10T07:55:00Z",
+      "lastNonInteractiveSignInDateTime": "2026-11-13T04:10:00Z"
+    }
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000004",
+    "displayName": "Dana Whitfield",
+    "userPrincipalName": "dana.whitfield@example.com",
+    "userType": "Member",
+    "accountEnabled": true,
+    "department": "Training",
+    "createdDateTime": "2025-01-20T03:00:00Z",
+    "assignedLicenses": [
+      {
+        "skuId": "00000000-0000-4000-a000-0000000000a1",
+        "disabledPlans": []
+      }
+    ],
+    "signInActivity": {
+      "lastSignInDateTime": "2026-11-12T10:05:00Z",
+      "lastNonInteractiveSignInDateTime": null
+    }
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000005",
+    "displayName": "Eli Foster",
+    "userPrincipalName": "eli.foster@example.com",
+    "userType": "Member",
+    "accountEnabled": true,
+    "department": "Student Services",
+    "createdDateTime": "2022-08-10T00:00:00Z",
+    "assignedLicenses": [
+      {
+        "skuId": "00000000-0000-4000-a000-0000000000a1",
+        "disabledPlans": []
+      }
+    ],
+    "signInActivity": {
+      "lastSignInDateTime": "2026-06-02T03:20:00Z",
+      "lastNonInteractiveSignInDateTime": "2026-06-02T05:00:00Z"
+    }
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000006",
+    "displayName": "Frankie Moss",
+    "userPrincipalName": "frankie.moss@example.com",
+    "userType": "Member",
+    "accountEnabled": true,
+    "department": "Finance",
+    "createdDateTime": "2023-09-04T00:00:00Z",
+    "assignedLicenses": [
+      {
+        "skuId": "00000000-0000-4000-a000-0000000000a3",
+        "disabledPlans": []
+      },
+      {
+        "skuId": "00000000-0000-4000-a000-0000000000b1",
+        "disabledPlans": []
+      }
+    ],
+    "signInActivity": {
+      "lastSignInDateTime": "2026-11-13T06:45:00Z",
+      "lastNonInteractiveSignInDateTime": "2026-11-14T01:15:00Z"
+    }
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000007",
+    "displayName": "Georgie Lam",
+    "userPrincipalName": "georgie.lam@example.com",
+    "userType": "Member",
+    "accountEnabled": false,
+    "department": "Training",
+    "createdDateTime": "2022-03-14T00:00:00Z",
+    "assignedLicenses": [
+      {
+        "skuId": "00000000-0000-4000-a000-0000000000a3",
+        "disabledPlans": []
+      }
+    ],
+    "signInActivity": {
+      "lastSignInDateTime": "2026-08-29T05:30:00Z",
+      "lastNonInteractiveSignInDateTime": "2026-08-29T07:00:00Z"
+    }
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000008",
+    "displayName": "Harper Singh",
+    "userPrincipalName": "harper.singh@example.com",
+    "userType": "Member",
+    "accountEnabled": false,
+    "department": "Student Services",
+    "createdDateTime": "2024-02-01T00:00:00Z",
+    "assignedLicenses": [
+      {
+        "skuId": "00000000-0000-4000-a000-0000000000a1",
+        "disabledPlans": []
+      }
+    ],
+    "signInActivity": {
+      "lastSignInDateTime": "2026-09-19T04:00:00Z",
+      "lastNonInteractiveSignInDateTime": null
+    }
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000009",
+    "displayName": "Indy Rowe",
+    "userPrincipalName": "indy.rowe@example.com",
+    "userType": "Member",
+    "accountEnabled": false,
+    "department": "Finance",
+    "createdDateTime": "2021-11-01T00:00:00Z",
+    "assignedLicenses": [],
+    "signInActivity": {
+      "lastSignInDateTime": "2026-05-03T02:00:00Z",
+      "lastNonInteractiveSignInDateTime": null
+    }
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000010",
+    "displayName": "Jules Ortega",
+    "userPrincipalName": "jules.ortega@example.com",
+    "userType": "Member",
+    "accountEnabled": true,
+    "department": "Marketing",
+    "createdDateTime": "2026-03-02T00:00:00Z",
+    "assignedLicenses": [
+      {
+        "skuId": "00000000-0000-4000-a000-0000000000a1",
+        "disabledPlans": []
+      }
+    ],
+    "signInActivity": {
+      "lastSignInDateTime": null,
+      "lastNonInteractiveSignInDateTime": null
+    }
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000011",
+    "displayName": "Kai Bennett",
+    "userPrincipalName": "kai.bennett@example.com",
+    "userType": "Member",
+    "accountEnabled": true,
+    "department": "Training",
+    "createdDateTime": "2026-11-10T00:00:00Z",
+    "assignedLicenses": [
+      {
+        "skuId": "00000000-0000-4000-a000-0000000000a1",
+        "disabledPlans": []
+      }
+    ],
+    "signInActivity": {
+      "lastSignInDateTime": null,
+      "lastNonInteractiveSignInDateTime": null
+    }
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000012",
+    "displayName": "Break Glass 01 (emergency access)",
+    "userPrincipalName": "breakglass.01@example.com",
+    "userType": "Member",
+    "accountEnabled": true,
+    "department": "IT",
+    "createdDateTime": "2023-02-06T01:00:00Z",
+    "assignedLicenses": [
+      {
+        "skuId": "00000000-0000-4000-a000-0000000000d1",
+        "disabledPlans": []
+      }
+    ],
+    "signInActivity": {
+      "lastSignInDateTime": "2026-10-01T02:00:00Z",
+      "lastNonInteractiveSignInDateTime": null
+    }
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000013",
+    "displayName": "Morgan Ellis",
+    "userPrincipalName": "morgan.ellis@example.com",
+    "userType": "Member",
+    "accountEnabled": true,
+    "department": "IT",
+    "createdDateTime": "2024-10-07T00:00:00Z",
+    "assignedLicenses": [
+      {
+        "skuId": "00000000-0000-4000-a000-0000000000a3",
+        "disabledPlans": []
+      },
+      {
+        "skuId": "00000000-0000-4000-a000-0000000000d1",
+        "disabledPlans": []
+      }
+    ],
+    "signInActivity": {
+      "lastSignInDateTime": "2026-11-14T00:20:00Z",
+      "lastNonInteractiveSignInDateTime": "2026-11-15T03:00:00Z"
+    }
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000014",
+    "displayName": "Noor Haddad",
+    "userPrincipalName": "noor.haddad@example.com",
+    "userType": "Member",
+    "accountEnabled": true,
+    "department": "Compliance",
+    "createdDateTime": "2023-11-20T00:00:00Z",
+    "assignedLicenses": [
+      {
+        "skuId": "00000000-0000-4000-a000-0000000000a3",
+        "disabledPlans": []
+      },
+      {
+        "skuId": "00000000-0000-4000-a000-0000000000b1",
+        "disabledPlans": []
+      }
+    ],
+    "signInActivity": {
+      "lastSignInDateTime": "2026-11-15T23:10:00Z",
+      "lastNonInteractiveSignInDateTime": "2026-11-15T23:40:00Z"
+    }
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000015",
+    "displayName": "Oakley Grant (Partner)",
+    "userPrincipalName": "oakley.grant_partner.example#EXT#@example.com",
+    "userType": "Guest",
+    "accountEnabled": true,
+    "department": null,
+    "createdDateTime": "2025-09-01T00:00:00Z",
+    "assignedLicenses": [],
+    "signInActivity": {
+      "lastSignInDateTime": "2026-04-20T01:00:00Z",
+      "lastNonInteractiveSignInDateTime": null
+    }
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000016",
+    "displayName": "Parker Young",
+    "userPrincipalName": "parker.young@example.com",
+    "userType": "Member",
+    "accountEnabled": true,
+    "department": "Training",
+    "createdDateTime": "2024-01-08T00:00:00Z",
+    "assignedLicenses": [
+      {
+        "skuId": "00000000-0000-4000-a000-0000000000a1",
+        "disabledPlans": []
+      }
+    ],
+    "signInActivity": {
+      "lastSignInDateTime": "2026-07-01T02:00:00Z",
+      "lastNonInteractiveSignInDateTime": "2026-11-14T05:30:00Z"
+    }
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000017",
+    "displayName": "Rory Chen",
+    "userPrincipalName": "rory.chen@example.com",
+    "userType": "Member",
+    "accountEnabled": true,
+    "department": "Training",
+    "createdDateTime": "2025-06-16T00:00:00Z",
+    "assignedLicenses": [
+      {
+        "skuId": "00000000-0000-4000-a000-0000000000a1",
+        "disabledPlans": []
+      }
+    ],
+    "signInActivity": {
+      "lastSignInDateTime": "2026-11-11T06:00:00Z",
+      "lastNonInteractiveSignInDateTime": "2026-11-12T06:00:00Z"
+    }
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000018",
+    "displayName": "Reception",
+    "userPrincipalName": "reception@example.com",
+    "userType": "Member",
+    "accountEnabled": false,
+    "department": "Shared mailbox",
+    "createdDateTime": "2022-01-10T00:00:00Z",
+    "assignedLicenses": [],
+    "signInActivity": {
+      "lastSignInDateTime": null,
+      "lastNonInteractiveSignInDateTime": null
+    }
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000019",
+    "displayName": "Student Enquiries",
+    "userPrincipalName": "enquiries@example.com",
+    "userType": "Member",
+    "accountEnabled": true,
+    "department": "Shared mailbox",
+    "createdDateTime": "2022-01-10T00:00:00Z",
+    "assignedLicenses": [],
+    "signInActivity": {
+      "lastSignInDateTime": null,
+      "lastNonInteractiveSignInDateTime": null
+    }
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000020",
+    "displayName": "Finance Invoices",
+    "userPrincipalName": "invoices@example.com",
+    "userType": "Member",
+    "accountEnabled": false,
+    "department": "Shared mailbox",
+    "createdDateTime": "2023-07-03T00:00:00Z",
+    "assignedLicenses": [
+      {
+        "skuId": "00000000-0000-4000-a000-0000000000e1",
+        "disabledPlans": []
+      }
+    ],
+    "signInActivity": {
+      "lastSignInDateTime": null,
+      "lastNonInteractiveSignInDateTime": null
+    }
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000021",
+    "displayName": "IT Alerts",
+    "userPrincipalName": "it.alerts@example.com",
+    "userType": "Member",
+    "accountEnabled": false,
+    "department": "Shared mailbox",
+    "createdDateTime": "2023-02-06T01:00:00Z",
+    "assignedLicenses": [],
+    "signInActivity": {
+      "lastSignInDateTime": null,
+      "lastNonInteractiveSignInDateTime": null
+    }
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000022",
+    "displayName": "Timetabling",
+    "userPrincipalName": "timetabling@example.com",
+    "userType": "Member",
+    "accountEnabled": false,
+    "department": "Shared mailbox",
+    "createdDateTime": "2024-12-02T00:00:00Z",
+    "assignedLicenses": [],
+    "signInActivity": {
+      "lastSignInDateTime": null,
+      "lastNonInteractiveSignInDateTime": null
+    }
+  }
+]
