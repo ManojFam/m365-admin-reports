@@ -1,0 +1,8 @@
+﻿"DisplayName","UserPrincipalName","UserType","AccountEnabled","Department","LastSignIn","DaysSinceSignIn","Licences","Finding","Status","Recommendation"
+"Finance Invoices","invoices@example.com","Member","False","Shared mailbox","Never",,"Exchange Online (Plan 1)","DisabledLicensed","Warning","Remove the licence, or note why it is kept (e.g. a mailbox over 50 GB)."
+"Georgie Lam","georgie.lam@example.com","Member","False","Training","2026-08-29","78","Microsoft 365 A3 for faculty","DisabledLicensed","Warning","Remove the licence, or note why it is kept (e.g. a mailbox over 50 GB)."
+"Harper Singh","harper.singh@example.com","Member","False","Student Services","2026-09-19","57","Office 365 A1 for faculty","DisabledLicensed","Warning","Remove the licence, or note why it is kept (e.g. a mailbox over 50 GB)."
+"Eli Foster","eli.foster@example.com","Member","True","Student Services","2026-06-02","166","Office 365 A1 for faculty","Inactive","Warning","Check with the manager; disable the account if the person has left."
+"Oakley Grant (Partner)","oakley.grant_partner.example#EXT#@example.com","Guest","True","","2026-04-20","209","","Inactive","Warning","Check with the manager; disable the account if the person has left."
+"Jules Ortega","jules.ortega@example.com","Member","True","Marketing","Never",,"Office 365 A1 for faculty","NeverSignedIn","Warning","Check the account is still needed; disable it if not."
+"Student Enquiries","enquiries@example.com","Member","True","Shared mailbox","Never",,"","NeverSignedIn","Warning","Check the account is still needed; disable it if not."

@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Microsoft 365 admin report - Example Training Institute (fictional)</title>
+<style>
+  body { font-family: "Segoe UI", Arial, sans-serif; margin: 2rem; color: #1f2933; background: #f7f9fb; }
+  h1 { margin: 0 0 .25rem; font-size: 1.6rem; }
+  h2 { margin: 2rem 0 .25rem; font-size: 1.25rem; }
+  h3 { margin: 0 0 .5rem; font-size: 1rem; }
+  .meta { color: #52606d; margin: 0 0 1rem; }
+  .desc { color: #3e4c59; margin: 0 0 .5rem; max-width: 960px; }
+  .muted { color: #7b8794; }
+  .cards { display: flex; flex-wrap: wrap; gap: 1rem; }
+  .card { background: #fff; border: 1px solid #e4e7eb; border-radius: 8px; padding: .75rem 1rem; min-width: 220px; }
+  .card .badge { margin: 0 .25rem .25rem 0; }
+  table { border-collapse: collapse; width: 100%; background: #fff; font-size: .9rem; }
+  th, td { text-align: left; padding: .45rem .65rem; border-bottom: 1px solid #e4e7eb; vertical-align: top; }
+  th { background: #243b53; color: #fff; font-weight: 600; }
+  .badge { display: inline-block; padding: .1rem .5rem; border-radius: 999px; font-size: .85rem; font-weight: 600; white-space: nowrap; }
+  .badge.ok { background: #e3f9e5; color: #1f6f2b; }
+  .badge.warning { background: #fff3c4; color: #8d5b00; }
+  .badge.critical { background: #ffe3e3; color: #a61b1b; }
+  .footer { color: #7b8794; font-size: .8rem; margin-top: 2rem; }
+</style>
+</head>
+<body>
+<h1>Microsoft 365 admin report</h1>
+<p class="meta">Tenant: <strong>Example Training Institute (fictional)</strong> &middot; Source: Mock data &middot; Data as of 2026-11-16 &middot; Generated 2026-11-20 07:44</p>
+<div class="cards">
+<div class="card"><h3>MFA registration</h3><span class="badge critical">Critical: 1</span> <span class="badge warning">Warning: 5</span> <span class="badge ok">OK: 8</span></div>
+<div class="card"><h3>Stale accounts</h3><span class="badge critical">Critical: 0</span> <span class="badge warning">Warning: 7</span> <span class="badge ok">OK: 0</span></div>
+<div class="card"><h3>Licences</h3><span class="badge critical">Critical: 0</span> <span class="badge warning">Warning: 4</span> <span class="badge ok">OK: 1</span></div>
+<div class="card"><h3>Shared mailboxes</h3><span class="badge critical">Critical: 0</span> <span class="badge warning">Warning: 3</span> <span class="badge ok">OK: 2</span></div>
+</div>
+<section>
+<h2>MFA registration</h2>
+<p class="desc">Enabled member accounts and whether they have an MFA method registered. Admins without MFA are Critical.</p>
+<table><thead><tr><th>DisplayName</th><th>UserPrincipalName</th><th>IsAdmin</th><th>MethodsRegistered</th><th>Status</th><th>Finding</th></tr></thead><tbody>
+<tr><td>Blake Harper</td><td>blake.harper@example.com</td><td>True</td><td>email</td><td><span class="badge critical">Critical</span></td><td>Admin account has no MFA method registered</td></tr>
+<tr><td>Dana Whitfield</td><td>dana.whitfield@example.com</td><td>False</td><td>email</td><td><span class="badge warning">Warning</span></td><td>No MFA method registered</td></tr>
+<tr><td>Jules Ortega</td><td>jules.ortega@example.com</td><td>False</td><td></td><td><span class="badge warning">Warning</span></td><td>No MFA method registered</td></tr>
+<tr><td>Kai Bennett</td><td>kai.bennett@example.com</td><td>False</td><td></td><td><span class="badge warning">Warning</span></td><td>No MFA method registered</td></tr>
+<tr><td>Morgan Ellis</td><td>morgan.ellis@example.com</td><td>True</td><td>mobilePhone</td><td><span class="badge warning">Warning</span></td><td>Admin relies on phone (SMS/voice) MFA only</td></tr>
+<tr><td>Student Enquiries</td><td>enquiries@example.com</td><td>False</td><td></td><td><span class="badge warning">Warning</span></td><td>No MFA method registered</td></tr>
+</tbody></table>
+<p class="muted">8 row(s) with status OK are in the CSV only.</p>
+</section>
+<section>
+<h2>Stale accounts</h2>
+<p class="desc">Enabled accounts with no sign-in for 90 days or more, accounts that have never been used, and disabled accounts that still hold a licence.</p>
+<table><thead><tr><th>DisplayName</th><th>UserPrincipalName</th><th>LastSignIn</th><th>DaysSinceSignIn</th><th>Licences</th><th>Finding</th><th>Status</th><th>Recommendation</th></tr></thead><tbody>
+<tr><td>Finance Invoices</td><td>invoices@example.com</td><td>Never</td><td></td><td>Exchange Online (Plan 1)</td><td>DisabledLicensed</td><td><span class="badge warning">Warning</span></td><td>Remove the licence, or note why it is kept (e.g. a mailbox over 50 GB).</td></tr>
+<tr><td>Georgie Lam</td><td>georgie.lam@example.com</td><td>2026-08-29</td><td>78</td><td>Microsoft 365 A3 for faculty</td><td>DisabledLicensed</td><td><span class="badge warning">Warning</span></td><td>Remove the licence, or note why it is kept (e.g. a mailbox over 50 GB).</td></tr>
+<tr><td>Harper Singh</td><td>harper.singh@example.com</td><td>2026-09-19</td><td>57</td><td>Office 365 A1 for faculty</td><td>DisabledLicensed</td><td><span class="badge warning">Warning</span></td><td>Remove the licence, or note why it is kept (e.g. a mailbox over 50 GB).</td></tr>
+<tr><td>Eli Foster</td><td>eli.foster@example.com</td><td>2026-06-02</td><td>166</td><td>Office 365 A1 for faculty</td><td>Inactive</td><td><span class="badge warning">Warning</span></td><td>Check with the manager; disable the account if the person has left.</td></tr>
+<tr><td>Oakley Grant (Partner)</td><td>oakley.grant_partner.example#EXT#@example.com</td><td>2026-04-20</td><td>209</td><td></td><td>Inactive</td><td><span class="badge warning">Warning</span></td><td>Check with the manager; disable the account if the person has left.</td></tr>
+<tr><td>Jules Ortega</td><td>jules.ortega@example.com</td><td>Never</td><td></td><td>Office 365 A1 for faculty</td><td>NeverSignedIn</td><td><span class="badge warning">Warning</span></td><td>Check the account is still needed; disable it if not.</td></tr>
+<tr><td>Student Enquiries</td><td>enquiries@example.com</td><td>Never</td><td></td><td></td><td>NeverSignedIn</td><td><span class="badge warning">Warning</span></td><td>Check the account is still needed; disable it if not.</td></tr>
+</tbody></table>
+</section>
+<section>
+<h2>Licences</h2>
+<p class="desc">Licences bought vs assigned for each SKU, and licences sitting on accounts with sign-in blocked.</p>
+<table><thead><tr><th>Licence</th><th>Total</th><th>Assigned</th><th>Available</th><th>PercentUsed</th><th>AssignedToBlocked</th><th>BlockedUsers</th><th>Status</th><th>Finding</th></tr></thead><tbody>
+<tr><td>Exchange Online (Plan 1)</td><td>2</td><td>1</td><td>1</td><td>50</td><td>1</td><td>invoices@example.com</td><td><span class="badge warning">Warning</span></td><td>1 assigned to blocked account(s) - reclaim</td></tr>
+<tr><td>Microsoft 365 A3 for faculty</td><td>6</td><td>6</td><td>0</td><td>100</td><td>1</td><td>georgie.lam@example.com</td><td><span class="badge warning">Warning</span></td><td>No licences left to assign; 1 assigned to blocked account(s) - reclaim</td></tr>
+<tr><td>Office 365 A1 for faculty</td><td>25</td><td>8</td><td>17</td><td>32</td><td>1</td><td>harper.singh@example.com</td><td><span class="badge warning">Warning</span></td><td>1 assigned to blocked account(s) - reclaim</td></tr>
+<tr><td>Power BI Pro</td><td>5</td><td>2</td><td>3</td><td>40</td><td>0</td><td></td><td><span class="badge warning">Warning</span></td><td>Subscription is in its grace period - renew or it will be suspended</td></tr>
+<tr><td>Microsoft Entra ID P1</td><td>5</td><td>4</td><td>1</td><td>80</td><td>0</td><td></td><td><span class="badge ok">OK</span></td><td></td></tr>
+</tbody></table>
+</section>
+<section>
+<h2>Shared mailboxes</h2>
+<p class="desc">Who has Full Access and Send As on each shared mailbox, and whether sign-in is blocked on the mailbox account.</p>
+<table><thead><tr><th>Mailbox</th><th>Address</th><th>FullAccess</th><th>SendAs</th><th>SignInBlocked</th><th>Status</th><th>Finding</th></tr></thead><tbody>
+<tr><td>Finance Invoices</td><td>invoices@example.com</td><td>frankie.moss@example.com; georgie.lam@example.com</td><td>frankie.moss@example.com</td><td>True</td><td><span class="badge warning">Warning</span></td><td>Disabled account(s) still have access: georgie.lam@example.com</td></tr>
+<tr><td>IT Alerts</td><td>it.alerts@example.com</td><td></td><td></td><td>True</td><td><span class="badge warning">Warning</span></td><td>Nobody has Full Access or Send As</td></tr>
+<tr><td>Student Enquiries</td><td>enquiries@example.com</td><td>eli.foster@example.com; harper.singh@example.com</td><td>eli.foster@example.com</td><td>False</td><td><span class="badge warning">Warning</span></td><td>Sign-in is enabled on the shared mailbox account - block it; Disabled account(s) still have access: harper.singh@example.com</td></tr>
+<tr><td>Reception</td><td>reception@example.com</td><td>avery.quinn@example.com; casey.doyle@example.com</td><td>casey.doyle@example.com</td><td>True</td><td><span class="badge ok">OK</span></td><td></td></tr>
+<tr><td>Timetabling</td><td>timetabling@example.com</td><td>casey.doyle@example.com; rory.chen@example.com; dana.whitfield@example.com</td><td>rory.chen@example.com</td><td>True</td><td><span class="badge ok">OK</span></td><td></td></tr>
+</tbody></table>
+</section>
+<p class="footer">Generated by M365AdminReports (Export-M365AdminReport). Read-only: nothing in the tenant was changed.</p>
+</body>
+</html>

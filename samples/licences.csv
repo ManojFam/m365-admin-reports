@@ -1,0 +1,6 @@
+﻿"Licence","SkuPartNumber","SubscriptionStatus","Total","Assigned","Available","PercentUsed","AssignedToBlocked","BlockedUsers","Status","Finding"
+"Exchange Online (Plan 1)","EXCHANGESTANDARD","Enabled","2","1","1","50","1","invoices@example.com","Warning","1 assigned to blocked account(s) - reclaim"
+"Microsoft 365 A3 for faculty","M365EDU_A3_FACULTY","Enabled","6","6","0","100","1","georgie.lam@example.com","Warning","No licences left to assign; 1 assigned to blocked account(s) - reclaim"
+"Office 365 A1 for faculty","STANDARDWOFFPACK_FACULTY","Enabled","25","8","17","32","1","harper.singh@example.com","Warning","1 assigned to blocked account(s) - reclaim"
+"Power BI Pro","POWER_BI_PRO","Warning","5","2","3","40","0","","Warning","Subscription is in its grace period - renew or it will be suspended"
+"Microsoft Entra ID P1","AAD_PREMIUM","Enabled","5","4","1","80","0","","OK",""

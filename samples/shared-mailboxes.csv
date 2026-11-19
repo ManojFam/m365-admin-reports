@@ -1,0 +1,6 @@
+﻿"Mailbox","Address","FullAccess","SendAs","FullAccessCount","SendAsCount","SignInBlocked","Status","Finding"
+"Finance Invoices","invoices@example.com","frankie.moss@example.com; georgie.lam@example.com","frankie.moss@example.com","2","1","True","Warning","Disabled account(s) still have access: georgie.lam@example.com"
+"IT Alerts","it.alerts@example.com","","","0","0","True","Warning","Nobody has Full Access or Send As"
+"Student Enquiries","enquiries@example.com","eli.foster@example.com; harper.singh@example.com","eli.foster@example.com","2","1","False","Warning","Sign-in is enabled on the shared mailbox account - block it; Disabled account(s) still have access: harper.singh@example.com"
+"Reception","reception@example.com","avery.quinn@example.com; casey.doyle@example.com","casey.doyle@example.com","2","1","True","OK",""
+"Timetabling","timetabling@example.com","casey.doyle@example.com; rory.chen@example.com; dana.whitfield@example.com","rory.chen@example.com","3","1","True","OK",""
