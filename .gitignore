@@ -1,0 +1,18 @@
+# Reports you generate locally (samples/ holds the committed examples).
+# Live reports contain real user names and addresses, so they must never be committed.
+output/
+reports/
+*.log
+testResults.xml
+
+# Secrets and local settings
+.env
+*.pfx
+*.key
+*.cer
+
+# Editors and OS
+.vscode/
+.idea/
+Thumbs.db
+Desktop.ini
