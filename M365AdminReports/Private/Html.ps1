@@ -1,0 +1,115 @@
+function ConvertTo-AdminReportHtml {
+    # Builds one self-contained HTML page (inline CSS, no scripts, no external files) so the
+    # report can be emailed or attached to a ticket. Every value is HTML-encoded, because
+    # display names come from the directory and could contain < or &.
+    #
+    # Each section is a hashtable: Title, Description, Columns, Rows, and optionally
+    # HideOk (only rows that need attention go in the page; the CSV keeps every row) and
+    # Skipped (a reason the section did not run).
+    param(
+        [Parameter(Mandatory)][psobject]$Tenant,
+        [Parameter(Mandatory)][object[]]$Section,
+        [Parameter(Mandatory)][datetime]$GeneratedAt
+    )
+
+    $encode = { param($Text) [System.Net.WebUtility]::HtmlEncode([string]$Text) }
+    $badge = { param($Status) '<span class="badge {0}">{1}</span>' -f $Status.ToLowerInvariant(), (& $encode $Status) }
+
+    $cards = foreach ($item in $Section) {
+        $rows = @($item.Rows)
+        if ($item.Skipped) {
+            $body = '<p class="muted">Not run</p>'
+        }
+        else {
+            $body = foreach ($level in 'Critical', 'Warning', 'OK') {
+                $n = @($rows | Where-Object { $_.Status -eq $level }).Count
+                '<span class="badge {0}">{1}: {2}</span>' -f $level.ToLowerInvariant(), $level, $n
+            }
+            $body = $body -join ' '
+        }
+        '<div class="card"><h3>{0}</h3>{1}</div>' -f (& $encode $item.Title), $body
+    }
+
+    $sections = foreach ($item in $Section) {
+        $html = @('<section>', ('<h2>{0}</h2>' -f (& $encode $item.Title)), ('<p class="desc">{0}</p>' -f (& $encode $item.Description)))
+
+        if ($item.Skipped) {
+            $html += '<p class="muted">Skipped: {0}</p>' -f (& $encode $item.Skipped)
+            $html += '</section>'
+            $html -join "`r`n"
+            continue
+        }
+
+        $allRows = @($item.Rows)
+        $shown = if ($item.HideOk) { @($allRows | Where-Object { $_.Status -ne 'OK' }) } else { $allRows }
+
+        if ($shown.Count -eq 0) {
+            $html += '<p class="muted">Nothing to report.</p>'
+        }
+        else {
+            $head = ($item.Columns | ForEach-Object { '<th>{0}</th>' -f (& $encode $_) }) -join ''
+            $body = foreach ($row in $shown) {
+                $cells = foreach ($column in $item.Columns) {
+                    if ($column -eq 'Status') { '<td>{0}</td>' -f (& $badge $row.Status) }
+                    else { '<td>{0}</td>' -f (& $encode $row.$column) }
+                }
+                '<tr>{0}</tr>' -f ($cells -join '')
+            }
+            $html += '<table><thead><tr>{0}</tr></thead><tbody>' -f $head
+            $html += $body
+            $html += '</tbody></table>'
+        }
+
+        $hidden = $allRows.Count - $shown.Count
+        if ($hidden -gt 0) {
+            $html += '<p class="muted">{0} row(s) with status OK are in the CSV only.</p>' -f $hidden
+        }
+        $html += '</section>'
+        $html -join "`r`n"
+    }
+
+    $tenantName = & $encode $Tenant.Name
+    $source = & $encode $Tenant.Source
+    $asOf = & $encode ('{0:yyyy-MM-dd}' -f $Tenant.ReferenceDate)
+    $generated = & $encode ('{0:yyyy-MM-dd HH:mm}' -f $GeneratedAt)
+
+    @"
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Microsoft 365 admin report - $tenantName</title>
+<style>
+  body { font-family: "Segoe UI", Arial, sans-serif; margin: 2rem; color: #1f2933; background: #f7f9fb; }
+  h1 { margin: 0 0 .25rem; font-size: 1.6rem; }
+  h2 { margin: 2rem 0 .25rem; font-size: 1.25rem; }
+  h3 { margin: 0 0 .5rem; font-size: 1rem; }
+  .meta { color: #52606d; margin: 0 0 1rem; }
+  .desc { color: #3e4c59; margin: 0 0 .5rem; max-width: 960px; }
+  .muted { color: #7b8794; }
+  .cards { display: flex; flex-wrap: wrap; gap: 1rem; }
+  .card { background: #fff; border: 1px solid #e4e7eb; border-radius: 8px; padding: .75rem 1rem; min-width: 220px; }
+  .card .badge { margin: 0 .25rem .25rem 0; }
+  table { border-collapse: collapse; width: 100%; background: #fff; font-size: .9rem; }
+  th, td { text-align: left; padding: .45rem .65rem; border-bottom: 1px solid #e4e7eb; vertical-align: top; }
+  th { background: #243b53; color: #fff; font-weight: 600; }
+  .badge { display: inline-block; padding: .1rem .5rem; border-radius: 999px; font-size: .85rem; font-weight: 600; white-space: nowrap; }
+  .badge.ok { background: #e3f9e5; color: #1f6f2b; }
+  .badge.warning { background: #fff3c4; color: #8d5b00; }
+  .badge.critical { background: #ffe3e3; color: #a61b1b; }
+  .footer { color: #7b8794; font-size: .8rem; margin-top: 2rem; }
+</style>
+</head>
+<body>
+<h1>Microsoft 365 admin report</h1>
+<p class="meta">Tenant: <strong>$tenantName</strong> &middot; Source: $source &middot; Data as of $asOf &middot; Generated $generated</p>
+<div class="cards">
+$($cards -join "`r`n")
+</div>
+$($sections -join "`r`n")
+<p class="footer">Generated by M365AdminReports (Export-M365AdminReport). Read-only: nothing in the tenant was changed.</p>
+</body>
+</html>
+"@
+}
